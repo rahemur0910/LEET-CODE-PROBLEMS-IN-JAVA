@@ -1,0 +1,21 @@
+We start by defining a function called length_of_longest_substring that takes a string s as input and returns an integer representing the length of the longest substring without repeating characters.
+
+We initialize some variables:
+
+n stores the length of the input string s.
+char_index is a dictionary that will store the most recent index of each character encountered.
+max_length keeps track of the maximum length of the substring without repeating characters found so far.
+start represents the start index of the current substring without repeating characters.
+We handle the edge case where the length of the input string is 0. In this case, we return 0 because there are no characters to form a substring.
+
+We iterate through the string s using a sliding window approach. The window is defined by the start and end pointers.
+
+For each character encountered (denoted by end), we check if it has been seen before in the current substring. We do this by checking if the character exists in the char_index dictionary and if its index is greater than or equal to the start index. If it does, it means the character is repeated within the current substring.
+
+If the character is repeated, we update the start index to the next index after the previous occurrence of the character. This ensures that we start a new substring without repeating characters.
+
+We update the char_index dictionary with the most recent index of the current character.
+
+At each iteration, we calculate the length of the current substring without repeating characters (end - start + 1) and update the max_length if necessary.
+
+Finally, we return the max_length, which represents the length of the longest substring without repeating characters found in the input string s.

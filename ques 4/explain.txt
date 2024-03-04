@@ -1,0 +1,36 @@
+Class Definition:
+
+    The solution is encapsulated within a class named Solution.
+Method Signature:
+
+The findMedianSortedArrays method signature:
+It takes two sorted integer arrays nums1 and nums2 as input. 
+It returns a double value, representing the median of the two arrays.
+Initialization:
+
+m and n are initialized to the lengths of nums1 and nums2, respectively.
+minIndex is initialized to 0, representing the minimum index for binary search.
+maxIndex is initialized to m, representing the maximum index for binary search.
+halfLength is calculated as (m + n + 1) / 2, representing the midpoint of the merged array.
+Binary Search:
+
+The solution uses binary search to find the correct partitioning point in the smaller array (nums1).
+Inside the while loop, i is calculated as the midpoint between minIndex and maxIndex, and j is calculated based on halfLength.
+Depending on the comparisons between elements from nums1 and nums2, the value of i is adjusted to find the correct partition point.
+Partitioning and Median Calculation:
+
+Once the correct partition point is found, the maximum value of the left partition (maxLeft) and the minimum value of the right partition (minRight) are calculated.
+If the total number of elements in the merged array is odd, the median is simply the maxLeft.
+If the total number of elements is even, the median is calculated as the average of maxLeft and minRight.
+Main Method:
+
+The main method serves as an entry point to the program.
+It creates an instance of the Solution class and tests the findMedianSortedArrays method with sample input arrays.
+It prints out the calculated median values.
+Edge Cases Handling:
+
+The solution handles cases where one array is larger than the other by swapping the arrays to ensure nums1 represents the smaller array.
+It also handles cases where the total number of elements in the merged array is odd or even to calculate the median accordingly.
+Complexity:
+
+The overall time complexity of the solution is O(log(min(m, n))), where m and n are the lengths of the input arrays. This meets the requirement of O(log (m+n)) when considering the total number of elements in both arrays.
