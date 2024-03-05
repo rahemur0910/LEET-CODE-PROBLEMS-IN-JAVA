@@ -1,0 +1,11 @@
+We create an array of StringBuilder objects to represent each row of the zigzag pattern. Each row will contain characters that fall into that row when traversing the zigzag.
+
+We initialize a variable row to keep track of the current row while traversing the input string. We also have a boolean variable goingDown to indicate whether we are currently moving down or up in the zigzag pattern.
+
+We iterate through each character of the input string and append it to the corresponding row in the array of StringBuilders.
+
+When we reach the top row (row == 0) or the bottom row (row == numRows - 1), we change the direction (goingDown) to reverse the movement in the zigzag pattern.
+
+Finally, we concatenate all the rows in the array of StringBuilders to get the final zigzag pattern string and return it.
+
+The main method demonstrates how to use this function with a given input string and number of rows.

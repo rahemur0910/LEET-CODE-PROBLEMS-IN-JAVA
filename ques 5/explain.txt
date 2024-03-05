@@ -1,0 +1,12 @@
+longestPalindrome Method: This method takes a string s as input and returns the longest palindromic substring found in the string. It uses dynamic programming to efficiently find the palindrome.
+
+Initialization of DP Array: The DP array dp[i][j] stores whether the substring from index i to index j is a palindrome or not. It is initialized based on the single characters and adjacent characters in the input string.
+
+Filling the DP Table: The DP table is filled iteratively for substrings of length 3 or more. It checks if the substring is a palindrome based on the characters at the current indices and the information stored in the DP table for inner substrings.
+
+Main Method: This method is used to take user input, call the longestPalindrome method, and measure the execution time. It also includes a warm-up phase to ensure more accurate measurement of execution time.
+
+Warm-up Phase: This loop executes the longestPalindrome method for a simple input ("a") multiple times to warm up the JVM. This helps reduce the impact of JVM warm-up on the measured execution time.
+
+Measuring Execution Time: The execution time for finding the longest palindromic substring is measured using System.nanoTime(). The difference between the start and end times is calculated to determine the execution time.
+
