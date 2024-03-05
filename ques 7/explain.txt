@@ -1,0 +1,9 @@
+We have a reverse method that takes an integer x as input and returns the integer with its digits reversed. Inside the method, we use a while loop to process each digit of the input integer.
+
+We extract the last digit of x using the modulus operator and add it to the reversed variable after multiplying reversed by 10 to shift its digits to the left.
+
+Before adding the new digit, we check if it will cause an overflow or underflow. If adding the digit would make the reversed integer exceed the 32-bit signed integer range, we return 0 to indicate overflow or underflow.
+
+In the main method, we use a Scanner object to take user input for a signed 32-bit integer.
+
+We call the reverse method with the user input integer and print the reversed integer to the console.
