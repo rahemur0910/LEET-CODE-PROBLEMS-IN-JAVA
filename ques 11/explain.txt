@@ -1,0 +1,11 @@
+I added an import statement for the Scanner class to read user input.
+In the main method:
+I created a Scanner object scanner to read input from the user.
+Prompt the user to enter the number of vertical lines n and read it using scanner.nextInt().
+Created an array height of size n to store the heights of the vertical lines.
+Prompt the user to enter the heights of the vertical lines and read them into the height array using a loop.
+Closed the Scanner object after reading the input.
+Then, I called the maxArea method with the provided input heights to find the maximum amount of water the container can store.
+Finally, I printed the result.
+
+

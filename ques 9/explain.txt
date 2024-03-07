@@ -1,0 +1,6 @@
+The function isPalindrome takes an integer x as input and returns true if x is a palindrome, otherwise false.
+It first checks if x is negative or if it ends with a zero (except when x is zero itself). If either of these conditions is true, x cannot be a palindrome, so it returns false.
+It then initializes a variable reversed to store the reverse of x.
+It iteratively reverses the digits of x by repeatedly taking the last digit of x, adding it to reversed, and removing the last digit from x.
+It continues this process until x becomes less than reversed, which means it has processed half of the digits in x.
+Finally, it checks if x is equal to reversed or if x is equal to reversed without the last digit (this covers cases where the length of x is odd), and returns true if either condition is true, indicating that x is a palindrome.

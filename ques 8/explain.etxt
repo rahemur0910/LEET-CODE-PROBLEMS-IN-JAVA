@@ -1,0 +1,28 @@
+Importing Libraries: The code imports the Scanner class from the java.util package, which is used to read input from the user.
+
+myAtoi Function: This function takes a string s as input and converts it into a 32-bit signed integer according to the given algorithm.
+
+a. Ignoring Leading Whitespace: The trim() method is called on the input string to remove any leading or trailing whitespace.
+
+b. Checking Sign: The function checks if the first character of the string is a '-' or '+' sign, indicating the sign of the number. It updates the sign variable accordingly and moves to the next character.
+
+c. Converting Digits: The function then iterates through the characters of the string starting from the current position, converting consecutive digits into an integer until it encounters a non-digit character or reaches the end of the string. It updates the result variable accordingly.
+
+d. Overflow Check: It checks for overflow conditions while converting digits. If the result exceeds the range of a 32-bit signed integer (Integer.MAX_VALUE or Integer.MIN_VALUE), it returns the appropriate maximum or minimum value.
+
+e. Returning the Result: Finally, it returns the result, considering the sign of the number.
+
+main Method: This is the entry point of the program.
+
+a. Reading User Input: It creates a Scanner object to read input from the user. It prompts the user to enter a string.
+
+b. Calling myAtoi Function: It calls the myAtoi function with the input string obtained from the user.
+
+c. Printing the Result: It prints the converted integer obtained from the myAtoi function.
+
+This code ensures that the input string is properly converted into a 32-bit signed integer according to the given rules and handles overflow conditions.
+
+
+
+
+
