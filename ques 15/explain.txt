@@ -1,0 +1,17 @@
+Sort the Array: Sort the input array in non-decreasing order. Sorting the array is crucial for avoiding duplicate triplets and for using the two-pointer approach efficiently.
+
+Iterate Through the Array: Iterate through the array. For each element at index i, do the following:
+
+a. Skip Duplicates: If the current element is the same as the previous element, skip it to avoid duplicate triplets.
+
+b. Set Target Sum: Calculate the target sum, which is the negation of the current element (-nums[i]).
+
+c. Use Two Pointer Technique: Use the two-pointer technique to find pairs of elements (from the remaining array) that sum up to the target sum. Initialize two pointers, left and right, one at i + 1 and the other at the end of the array.
+
+While left is less than right, do the following:
+Calculate the sum of elements at indices left and right.
+If the sum equals the target sum, add the triplet (nums[i], nums[left], nums[right]) to the result.
+Skip Duplicate Elements: Increment left while the element at index left is the same as the previous element. Decrement right while the element at index right is the same as the previous element.
+Move Pointers: Move left to the right and right to the left.
+Return the Result: Return the list of unique triplets found during the process.
+

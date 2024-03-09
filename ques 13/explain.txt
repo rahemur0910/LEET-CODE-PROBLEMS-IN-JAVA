@@ -1,0 +1,9 @@
+We create a HashMap named romanValues to store the values of Roman numerals.
+We iterate through the Roman numeral string.
+For each numeral, we retrieve its value from the romanValues HashMap.
+If the current numeral's value is less than the next one, we subtract its value from the total (and account for the subtraction case).
+Otherwise, we add its value to the total.
+Finally, we return the total value, which represents the integer equivalent of the Roman numeral.
+
+
+

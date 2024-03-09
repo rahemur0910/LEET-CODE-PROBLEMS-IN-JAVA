@@ -1,0 +1,9 @@
+Here's how we can approach it:
+
+Create a mapping of digits to letters according to the telephone buttons.
+Define a recursive function to generate combinations for each digit in the input string.
+Start with an empty string and add letters corresponding to the first digit.
+Recursively call the function for the next digit, appending letters to the current combination.
+Repeat this process until all digits have been processed.
+Store each valid combination during the recursion.
+Return all stored combinations.
